@@ -48,12 +48,11 @@ public class main {
 		while (i<inList.size())
 		{
 			rotate = inList.get(i);
-			System.out.print(rotate+", ");
 			//take the value of the current record and rotate letters from head to tail.
 			int j = 1;
 			while (j<rotationAmnt)
 			{
-				int k = i+1;
+				int k = i;
 				String rotateHead = rotate.substring(0,1);
 				String rotateTail = rotate.substring(1,rotate.length());
 				rotate = rotateTail+rotateHead;
@@ -70,7 +69,6 @@ public class main {
 			}
 			i++;
 		}
-		System.out.println("total = "+inList.size());
 		
 		return inList;
 	}

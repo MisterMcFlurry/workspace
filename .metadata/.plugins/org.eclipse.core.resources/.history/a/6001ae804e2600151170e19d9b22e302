@@ -13,6 +13,7 @@ public class main {
 		permutations = new ArrayList<String>();
 		permutations = BuildPermutations(permutations, SHAPE_SIDES, COLOURS);
 		permutations = RemoveRotations(permutations, SHAPE_SIDES);
+		permutations = RemoveRotations(permutations, SHAPE_SIDES);
 	}
 	
 	public static ArrayList<String> BuildPermutations(ArrayList<String> inList, int maxSides, int maxColours)
