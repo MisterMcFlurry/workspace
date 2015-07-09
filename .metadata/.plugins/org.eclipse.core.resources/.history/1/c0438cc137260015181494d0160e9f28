@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+
+public class main {
+	
+	static ArrayList permutations;
+	static final int SHAPE_SIDES = 6;
+	static final int COLOURS = 3;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub  
+
+		permutations = new ArrayList();
+		Build
+	}
+	
+	public ArrayList BuildPermutations(ArrayList inList, int maxSides, int maxColours)
+	{
+		inlist = BuildPermutations(inList, maxSides, maxColours, 0);
+		
+		return inList;
+	}
+
+	public void BuildPermutations(ArrayList inList, int maxSides, int maxColours, int currentSide)
+	{
+		
+	}
+}

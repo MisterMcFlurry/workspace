@@ -1,0 +1,54 @@
+import java.util.ArrayList;
+
+
+public class main {
+	
+	static ArrayList<String> permutations;
+	static final int SHAPE_SIDES = 6;
+	static final int COLOURS = 3;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub  
+
+		permutations = new ArrayList<String>();
+		permutations = BuildPermutations(permutations, SHAPE_SIDES, COLOURS);
+	}
+	
+	public static ArrayList<String> BuildPermutations(ArrayList<String> inList, int maxSides, int maxColours)
+	{
+		BuildPermutations(inList, maxSides, maxColours, "");
+
+		return inList;
+	}
+
+	public static void BuildPermutations(ArrayList<String> inList, int maxSides, int maxColours, String entry)
+	{
+		int i=0;
+		while (i<maxColours)
+		{
+			if(entry.length()+1<maxSides)
+			{
+				BuildPermutations(inList,maxSides,maxColours,entry+(i+1));
+			}
+			else
+			{
+				inList.add(entry+(i+1));
+			}
+			i++;
+			
+		}
+	}
+	
+	public static ArrayList<String> RemoveRotations(ArrayList<String> inList)
+	{
+		i=0;
+		while (i<inList.size())
+		{
+			
+		}
+		
+		return inList;
+	}
+	
+}
+
