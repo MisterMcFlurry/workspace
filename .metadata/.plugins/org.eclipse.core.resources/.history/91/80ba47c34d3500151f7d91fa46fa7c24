@@ -1,0 +1,24 @@
+
+public class VariableContainer {
+	
+
+
+
+	String name = "";
+	String data = "";
+	
+
+	public VariableContainer(String input) {
+		//split variable into variable name and data
+		String temp[] = input.split("=");
+		name = temp[0];
+		data = temp[1];
+	}
+	
+	public String getVariable() {return name;}
+	public void setVariable(String variable) {this.name = variable;}
+
+	public String getData() {return data;}
+	public void setData(String data) {this.data = data;}
+
+}

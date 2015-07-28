@@ -1,0 +1,24 @@
+import javax.swing.JFrame;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+	    JFrame f = new JFrame("My Hello Panel!");
+	    f.setVisible(true); // equivalent to f.show()!
+
+		// Frame Parameters
+		f.setTitle(s);
+		f.setSize(300,200); // default size is 0,0
+		f.setLocation(10,200); // default is 0,0 (top left corner)
+
+
+		// Add Panels
+		f.add(new VariableContainer("test=data"));
+
+	}
+
+}

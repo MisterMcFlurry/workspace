@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+
+public class Address {
+	
+	String input ="";
+	ArrayList<String> url;
+	ArrayList<VariableContainer> variables;
+	
+	
+	public Address(String inString) {
+		super();
+		input = inString;
+	}
+	
+	//breaks apart the input string into URL and Variables
+	private void BreakInput(String inString)
+	{
+		
+	}
+	
+	//builds up and returns the address string 
+	private String BuildAddress()
+	{
+		return "temp";
+	}
+
+}

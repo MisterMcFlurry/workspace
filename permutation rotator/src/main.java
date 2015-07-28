@@ -5,7 +5,7 @@ public class main {
 	
 	static ArrayList<String> permutations;
 	static final int SHAPE_SIDES = 6;
-	static final int COLOURS = 3;
+	static final int COLOURS = 2;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub  

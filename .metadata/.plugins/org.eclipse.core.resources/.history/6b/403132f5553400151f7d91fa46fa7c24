@@ -1,0 +1,14 @@
+
+public class VariableContainer {
+	
+	String variable = "";
+	String data = "";
+	
+
+	public VariableContainer(String input) {
+		String temp[] = input.split("=");
+		variable = temp[0];
+		data = temp[1];
+	}
+
+}
